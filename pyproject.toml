@@ -1,0 +1,30 @@
+[project]
+name = "chatgpt-evals"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "Linus LI", email = "linus_li@tech.gov.sg" }
+]
+dependencies = [
+    "pandas>=2.3.3",
+    "requests>=2.32.5",
+    "tqdm>=4.67.1",
+    "datetime>=6.0",
+    "selenium>=4.39.0",
+    "datasets>=4.4.2",
+]
+requires-python = ">= 3.8"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/chatgpt_evals"]

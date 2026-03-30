@@ -12,3 +12,5 @@ wheels/
 # secrets
 src/chatgpt_evals/config.py
 src/compliance_api/config.py
+src/compliance_api/conversation_history.csv
+src/compliance_api/conversations_raw.json
